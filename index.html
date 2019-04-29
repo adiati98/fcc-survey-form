@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Survey Form</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto+Condensed:400,700" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" media="screen" href="survey-form2.css">
+
+</head>
+
+
+<body>
+
+   <div class="container">
+      <h1 id="title">!cool<span class="web">WebDesign</span></h1>
+
+      <p id="description">Your satisfaction is our goal! <span class="help">Please help us improve our service by filling below
+            survey form.</span></p>
+
+      <div class="form-wrapper">
+         <form id="survey-form" action="#">
+
+            <div class="detail-row">
+               <label for="name" id="name-label" class="left-row">Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter your name" required class="right-row">
+            </div>
+
+            <div class="detail-row">
+               <label for="email" id="email-label" class="left-row">E-mail:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your e-mail" required class="right-row">
+            </div>
+
+            <div class="detail-row">
+               <label for="number" id="number-label" class="left-row">Age:</label>
+               <input type="number" id="number" name="age" min="0" max="100" placeholder="Your age" required class="right-row">
+            </div>
+
+            <div class="detail-row">
+               <label for="dropdown" class="left-row">What is your favorite style?</label>
+               <select name="fav-style" id="dropdown" class="right-row">
+                  <option disabled value>Select style</option>
+                  <option value="modern">Modern</option>
+                  <option value="vintage">Vintage</option>
+                  <option value="soft">Soft Look</option>
+                  <option value="bright">Neon Look</option>
+                  <option value="dark">Dark Look</option>
+               </select>
+            </div>
+
+            <div class="detail-row push-down">
+               <label for="recommendation" class="left-row ">Will you recommend <em><strong>!cool<span class="web">WebDesign</span></strong></em>
+                  to your
+                  friends?</label>
+               <ul class="order-row">
+                  <li>
+                     <label for="yes" class="middle-row">In a heartbeat!</label>
+                     <input type="radio" id="yes" value="yes" name="recommend" class="list-row">
+                  </li>
+                  <li>
+                     <label for="maybe" class="middle-row">I'll think about it</label>
+                     <input type="radio" id="maybe" value="maybe" name="recommend" class="list-row">
+                  </li>
+                  <li>
+                     <label for="no" class="middle-row">I don't think so</label>
+                     <input type="radio" id="no" value="no" name="recommend" class="list-row">
+                  </li>
+               </ul>
+            </div>
+
+
+            <div class="detail-row">
+               <label for="improve" class="left-row">Things we should improve in the future:</label>
+               <ul class="order-row">
+                  <li>
+                     <label for="layout" class="middle-row">Web Layout & Styling</label>
+                     <input type="checkbox" id="layout" name="suggestion" value="layout" class="list-row">
+                  </li>
+                  <li>
+                     <label for="access" class="middle-row">Accessibility</label>
+                     <input type="checkbox" id="access" name="suggestion" value="access" class="list-row">
+                  </li>
+                  <li>
+                     <label for="price" class="middle-row">Pricing</label>
+                     <input type="checkbox" id="price" name="suggestion" value="style" class="list-row">
+                  </li>
+                  <li>
+                     <label for="cs" class="middle-row">Customer Service</label>
+                     <input type="checkbox" id="cs" name="suggestion" value="cs" class="list-row">
+                  </li>
+               </ul>
+            </div>
+
+
+            <div class="detail-row">
+               <label for="message" class="left-row">Other comments / suggestions:</label>
+               <textarea name="message" id="message" placeholder="Enter your message here" class="right-row-message"></textarea>
+            </div>
+
+            <label for="submit"></label>
+            <button id="submit">Submit</button>
+         </form>
+
+      </div>
+   </div>
+
+
+</body>
+
+</html>
